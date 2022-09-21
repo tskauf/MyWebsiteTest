@@ -6,9 +6,9 @@
     angular.module('mod1_app',[])
 
     // myname.$inject($scope)
-    .controller(myname,function($scope){
-        $scope.name = 'Tim'
-    })
+    .controller('myname', function ($scope) {
+        $scope.name = 'Tim';
+    });
 
 
 
