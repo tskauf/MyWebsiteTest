@@ -1,15 +1,16 @@
-// const angular = require("angular");
-
 (function(){
-    'use strict'
-    
-    angular.module('mod1_app',[])
+'use strict'
 
-    // myname.$inject($scope)
-    .controller('myname', function ($scope) {
-        $scope.name = 'Tim';
-    });
+angular.module('LunchCheck',[])
+.controller('LunchCheckController', LunchCheckController);
 
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController($scope) {
+    $scope.message = '';
 
+    $scope.checkMessage = function() {
+        $scope.message = 'You clicked!'
+    }
+};
 
 })();
